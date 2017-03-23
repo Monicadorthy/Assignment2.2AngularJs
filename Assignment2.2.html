@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment2.2</title>
+</head>
+<body>
+<script>
+class Vehicle{
+	constructor(type, year){
+		this.type=type;
+		this.year=year;
+	}
+	getVehicleInfo(){
+	//console.log('Your Vehicle is of type:'+this.type+ 'Year' +this.year);
+		console.log(`Your Vehicle is of type: ${this.type} Year ${this.year}`);
+	}
+}
+class bus extends Vehicle{
+constructor(year){
+	//to call the object of parent class Vehicle
+	super('6 wheeler',year);
+}
+}
+ class car extends Vehicle{
+	constructor(year){
+		//to call the object of parent class Vehicle
+		super('4 wheeler',year);
+	}
+}
+class bike extends Vehicle{
+	constructor(year){
+		//to call the object of parent class Vehicle
+		super('2 wheeler',year);
+	}
+}
+var Bmtc =new bus(2015);
+Bmtc.getVehicleInfo();
+var hondaCity = new car(2016);
+hondaCity.getVehicleInfo();
+var pulsar =new bike(2017);
+pulsar.getVehicleInfo();
+</script>
+</body>
+</html>
